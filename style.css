@@ -19,7 +19,7 @@ header {
   height: 125px;
   width: 100%;
   background-color: #000000;
-  padding-top: 30px;
+  padding-top: 20px;
   position: fixed;
   /* justify-content: space-between; */
   /* align-items: center; */
@@ -182,7 +182,6 @@ select option:hover {
 #Icon-box {
   display: flex;
   justify-content: space-evenly;
-  padding-top: 20px;
 }
 
 .Icons {
@@ -200,6 +199,7 @@ select option:hover {
   width: 75vw;
   margin-left: 25vw;
 }
+
 .content {
   width: 100vw;
   margin-left: 0vw;
@@ -250,15 +250,9 @@ select option:hover {
   text-align: center;
   font-weight: bold;
   font-family: 'Get Schwifty';
-  /* text-transform: uppercase; */
-  /* text-shadow: 3px 3px 3px black; */
   color:black;
-  font-size: 3.2rem;
-  /* background-color: rgb(123, 255, 0); */
-  margin: 10rem;
-  /* box-shadow: 0px 0px 80px rgb(8, 247, 20);
-  border-radius: 50px; */
-  /* border: 1px solid rgb(255, 255, 255); */
+  font-size: 3rem;
+  margin: 5rem;
   line-height: 150%;
   animation-name: neon;
   animation-duration: 4s;
@@ -267,33 +261,8 @@ select option:hover {
   -webkit-text-stroke-color:black;
 }
 
-/*Scroll Bar*/
-/* width */
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 6px #90C944; 
-  background:  black; 
-  border-radius: 50px;
-}
- 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background:  #90C944; 
-  border-radius: 50px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #11AFC9; 
-}
-
 
 @media only screen and (max-width: 600px) {
-
   header {
     display: flex;
     height: 125px;
@@ -304,7 +273,6 @@ select option:hover {
     /* justify-content: space-between; */
     /* align-items: center; */
   }
-  
   header h1 {
       color: #90C944;
       font-size: 30px;
@@ -315,7 +283,6 @@ select option:hover {
       animation-iteration-count: infinite;
       letter-spacing: 2px;
   }
-
   .btn-menu {
     /* background: url('img/menu-icon.png') no-repeat; 
     background-size: cover; */
@@ -325,7 +292,6 @@ select option:hover {
     padding: 5px;
     margin: 20px;
   } 
-
   .nav {
     width: 85%;
     /* min-width: 300px; */
@@ -395,6 +361,7 @@ select option:hover {
     display: none;
   }
   
+  
   .select{
     display: flex;
     flex-wrap: wrap;
@@ -406,6 +373,7 @@ select option:hover {
     background-color: #13D2F0; 
   }
   
+
   .card{
     height: 500px;
     font-size: 15px;

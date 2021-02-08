@@ -18,6 +18,7 @@ let information = rickandmorty.results;
         .sort(myFunctionSort)
      return result;
     }
+
     function filterSpecies(element){
       const {species} = information;
       if(species){
@@ -25,6 +26,7 @@ let information = rickandmorty.results;
       }
       return element;
     }
+
     function filterStatus(element){
       const {status} = information;
       if(status){
@@ -32,6 +34,7 @@ let information = rickandmorty.results;
       }
       return element;
     }
+
     function filterGender(element){
       const {gender} = information;
       if(gender){
@@ -39,6 +42,8 @@ let information = rickandmorty.results;
       }
       return element;
     }
+
+
     function filterType(element){
       const {type} = information;
       if(type){
@@ -46,6 +51,7 @@ let information = rickandmorty.results;
       }
       return element;
     }
+
     function orderCardsAZ(){
      const {order} = information;
     if(order)
@@ -57,6 +63,7 @@ let information = rickandmorty.results;
       return 0;
 })
 }
+
 function orderCardsZA(){
   const {order} = information;
   if(order)
@@ -91,3 +98,5 @@ export { filterResults, filterSpecies, filterGender, filterStatus, filterType, o
   
 //   return filterForAlive;
 // };
+
+

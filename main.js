@@ -4,14 +4,15 @@
 import {filterResults} from './data.js';
 import rickandmorty from './data/rickandmorty/rickandmorty.js';
 
-let information = rickandmorty.results;
-
 //Eventos
 document.addEventListener('DOMContentLoaded',()=>{
+  
     showData(information);
 })
+
 //variables
 let results = document.getElementById('character')
+let information = rickandmorty.results;
 const species = document.querySelector('#specie'),
       status = document.querySelector('#status'),
       gender = document.querySelector('#gender'),
@@ -21,7 +22,7 @@ const species = document.querySelector('#specie'),
 species.addEventListener('change', e => {
     // searchData.species = e.target.value;
     information.species = e.target.value;
-    const result = filterResults(information);
+    const result = filterResults();
     if(result.length){
       showData(result);
       }else{
@@ -30,7 +31,7 @@ species.addEventListener('change', e => {
   })
   status.addEventListener('change', e => {
     information.status = e.target.value;
-    const result = filterResults(information);
+    const result = filterResults();
     if(result.length){
       showData(result);
       }else{
@@ -39,7 +40,7 @@ species.addEventListener('change', e => {
   })
   gender.addEventListener('change', e => {
     information.gender = e.target.value;
-    const result = filterResults(information);
+    const result = filterResults();
     if(result.length){
       showData(result);
       }else{
@@ -48,7 +49,7 @@ species.addEventListener('change', e => {
   })
   type.addEventListener('change', e => {
     information.type = e.target.value;
-    const result = filterResults(information);
+    const result = filterResults();
     if(result.length){
       showData(result);
       }else{
@@ -58,7 +59,7 @@ species.addEventListener('change', e => {
   order.addEventListener('change', e => {
     // console.log('evento de order');
     information.order = e.target.value;
-   const result = filterResults(information, information.order);
+   const result = filterResults(information.order);
    if(result.length){
      showData(result);
      }else{
