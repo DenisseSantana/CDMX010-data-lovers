@@ -3,14 +3,10 @@
 // import {filterResults} from './data.js'
 import {filterResults} from './data.js';
 import rickandmorty from './data/rickandmorty/rickandmorty.js';
-
 //Eventos
 document.addEventListener('DOMContentLoaded',()=>{
-  
     showData(Data);
 })
-
-
 //variables
 let results = document.getElementById('character')
 let Data = rickandmorty.results;
@@ -19,6 +15,7 @@ const selectedSpecies = document.querySelector('#specie'),
       selectedGender = document.querySelector('#gender'),
       selectedType = document.querySelector('#type'),
       selectedOrder = document.querySelector('#order');
+
 //Event listener para los selects de la busqueda
 selectedSpecies.addEventListener('change', e => {
     // searchData.species = e.target.value;
@@ -96,6 +93,7 @@ function CleanHTML(){
     results.removeChild(results.firstChild);
   }
 }
+
 
 function noResult(){
   CleanHTML();
